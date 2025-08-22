@@ -19,5 +19,12 @@ export const mastra = new Mastra({
     env: {
       NODE_ENV: "production",
     },
+    routes: [
+      {
+        pattern: "mastra.meadery.win/*",
+        zone_name: "meadery.win",
+        custom_domain: true
+      }
+    ],
   }),
 });
